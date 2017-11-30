@@ -1,0 +1,154 @@
+/*div {outline: 5px dotted blue}*/
+mark
+	{background: #ffec82; 
+	padding: 0 3px; 
+	border: 1px dashed #333;
+	}
+
+body 
+	{font-family: Arial, Verdana, sans-serif;
+	padding: 40px;">
+	}
+#wrap
+	{background-image: linear-gradient(to bottom, #ffffff, 	#FFFF99); 
+	/*width: 100%;*/ /*min-width: 800px;*/ max-width: 960px;
+	padding:20px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	box-shadow: 40px 40px 40px #1e1e1e;
+	border-radius: 35px;
+	}
+#nav1
+	{text-transform:uppercase;
+	}
+#nav1 ul
+	{list-style-type: none;
+	}
+#nav1 ul li
+	{display: inline-block;
+	background: #ffec82;
+	margin: 5px;
+	}
+#nav2
+	{position: fixed;
+	left: 0px;
+	top: 0px;
+	}
+
+#nav2 ol
+	{/*list-style-type: none;*/
+	padding: 0px;
+	margin-left: 20px;
+	margin-top: 0px;
+	}
+#nav2 ol li
+	{margin-top: 5px;
+	font-size:x-small;
+	}
+#nav_bottom
+	{text-transform:uppercase;
+	
+	}
+#nav_bottom ul
+	{list-style-type: none;
+	font-size:x-small;
+	}
+#nav_bottom ul li
+	{display: inline-block;
+	background: #ffec82;
+	margin: 5px;
+	}
+footer
+	{font-size: .80em;
+	font-style: italic;		
+	}
+.книга{
+	/*display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;*/
+	background-color: #444;
+	color: #ccc;
+	border-radius: 10px;
+	padding: 40px;
+	overflow:auto;
+	margin-top:20px;
+}
+.div2{
+	/*display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;*/
+	background-color: #ccc;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #444;
+	padding: 20px;
+	overflow:auto;
+	margin-top:40px;
+	
+}
+/*.div21{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-columns: 1fr;
+		
+	grid-gap: 20px;
+	background-color: #ccc;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #444;
+	padding: 20px;
+	overflow:auto;
+}*/
+.div3{
+	display: grid;
+	grid-template-columns: auto;
+	/*grid-template-columns: 
+		repeat(auto-fill, 
+			minmax(200px, 1fr));*/
+	grid-gap: 2px;
+	/*margin: 2px;*/
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #000;
+	margin-top:20px;
+	padding: 2px;
+	/*max-width:200px;*/
+	overflow: auto;
+}
+.div4{
+	background-color: #999;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #fff;
+	padding: 20px;
+	/*max-width:200px;*/
+	overflow: auto;
+}
+form {
+	background-color: #eee;
+	/*border: 1px solid #000;*/
+	box-shadow:5px 5px 2px #666;
+	padding:20px;
+	
+}
+#formCSS { 
+	background-color:#eaeaea;
+	font-family: Arial, sans-serif;
+	padding: 10px; 
+}
+#formCSS label { 
+	float: left;
+	width: 100px;
+	clear: left;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px; 
+}
+#formCSS input, textarea { 
+	margin-top: 10px;
+	display: block; 
+}
+#formCSS #mySubmit { margin-left: 110px; }
+

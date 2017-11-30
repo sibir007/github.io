@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ch9</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="ch9CSS.css">
+		<style>		
+		</style>
+	</head>
+	<body>
+		<div id="wrap">			
+			<header>
+				<div id="container2">
+					<h1>Forms</h1>
+				</div>
+			</header>	
+						
+			<nav id="nav1">
+				<ul>
+					<li><a href="Index.html">Home</a><br></li>
+					<li><a href="Описание кода.html">Описание кода</a></li>
+					<li><a href="text.html">text</a> </li>
+					<li><a href="ch4.html">ch4 CSS Visual Effects</a></li>
+					<li><a href="ch5.html">ch5 Web Desing</a></li>
+					<li><a href="ch6.html">ch6 Page Layout</a></li>
+					<li><a href="ch7.html">ch7 More on Linls, Layout, Mobil</a></li>
+					<li><a href="special_characters.html">Special Chracters</a></li>
+					<li><a href="default_style_sheet.html">Default Style Sheet</a></li>
+				</ul>		
+						<br>
+					
+			</nav>
+			
+			
+			<nav id="nav2">
+				<ol>
+					<li><a href="#Overview of Forms">Overview of Forms</a></li>
+					<li><a href="#Input Element Form Controls">Input Element Form Controls</a></li>
+					<li><a href="#Scrolling Text Box">Scrolling Text Box</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					
+				</ol>
+			</nav>
+		<main>
+			<div class="книга">
+				<a id="Overview of Forms"><h2>Overview of Forms</h2>
+				
+				<div class="div2">
+						<div class="divhead"></div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+. . . form controls go here . . .
+</form>
+</xmp>
+							</div>						
+												
+							
+								<p><form name="order" method="post" id="order" action="demo.php"class="frm">. . . form controls go here . . .</form></p>
+							
+						</div>	
+				
+						<div class="divhead">Form Element</div>
+						<div class="div3">
+							<div class="div4">
+								action
+							</div>				
+							<div class="div4">
+								URL or file name/path of server-side processing script
+							</div>
+							<div class="div4">
+								Required; indicates where to send the form information when the form is submitted; mailto:e-mailaddress will launch the visitor’s default e-mail 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								autocomplete
+							</div>				
+							<div class="div4">
+								on / off
+							</div>
+							<div class="div4">
+								 HTML5 attribute; default value; browser will use autocomplete to fill form fields HTML5 attribute; browser will not use autocomplete to fill form fields
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces; the value must be unique and not used for other id values on the same web page document
+							</div>
+							<div class="div4">
+								Optional; provides a unique identifier for the form
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								method
+							</div>				
+							<div class="div4">
+								get / post
+							</div>
+							<div class="div4">
+								 Default value; the value of get causes the form data to be appended to the URL and sent to the web server The post method is more private and transmits the form data in the body of the HTTP response; this method is preferred by the W3C
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter; choose a form name value that is descriptive but short (for example, OrderForm is better than Form1 or WidgetsRUsOrderForm)
+							</div>
+							<div class="div4">
+								 Optional; names the form so that it can be easily accessed by client-side scripting languages, such as JavaScript, to edit and verify the form information before the server-side processing is invoked
+							</div>
+						</div>
+				</div>	
+			
+				<a id="Input Element Form Controls"><h2>Input Element Form Controls</h2>
+				<div class="div2">
+						<div class="divhead">Text Box</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<input type="text">
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Text Box<br>
+	E-mail: <input type="text" 
+	name="email" id="email">
+</form>
+</xmp>								
+							</div>				
+							
+							<p><form name="order" 
+								method="post" 
+								id="order" 
+								action="demo.php">Sample Text Box<br>
+								E-mail: <input type="text" name="email" id="email">
+							</form>	</p>
+							
+						</div>
+						<div class="div3">
+							<div class="div4">
+								type
+							</div>				
+							<div class="div4">
+								 text 
+							</div>
+							<div class="div4">
+								 Configures a text box
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces,begins with a letter
+							</div>
+							<div class="div4">
+								 Names the form element so that it can be easily accessed by client-side scripting languages (such as JavaScript) or by erver-side processing; the name should be unique
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter  
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								size
+							</div>				
+							<div class="div4">
+								Numeric value 
+							</div>
+							<div class="div4">
+								Configures the width of the text box as displayed by the browser; if size is omitted,the browser displays the text box with its own default size 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								maxlength
+							</div>				
+							<div class="div4">
+								Numeric value  
+							</div>
+							<div class="div4">
+								 Configures the maximum length of data accepted by the text box
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								value
+							</div>				
+							<div class="div4">
+								  Text or numeric characters 
+							</div>
+							<div class="div4">
+								  Assigns an initial value to the text box that is displayed by the browser; accepts information typed in the text box; this value can be accessed by client-side scripting languages and by server-side processing
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								 disabled 
+							</div>
+							<div class="div4">
+								 Form control is disabled
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								readonly
+							</div>				
+							<div class="div4">
+								readonly  
+							</div>
+							<div class="div4">
+								 Form control is for display; cannot be edited
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								autocomplete
+							</div>				
+							<div class="div4">
+								 on / off 
+							</div>
+							<div class="div4">
+								 HTML5 attribute; default; browser will use autocomplete to fill the form control / HTML5 attribute; browser will not use autocomplete to fill the form control
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								autofocus
+							</div>				
+							<div class="div4">
+								 autofocus  
+							</div>
+							<div class="div4">
+								 HTML5 attribute; browser places cursor in the form control and sets the focus
+							</div>
+						</div>						
+						<div class="div3">
+							<div class="div4">
+								list
+							</div>				
+							<div class="div4">
+								 Datalist element id value  
+							</div>
+							<div class="div4">
+								 HTML5 attribute; associates the form control with a datalist element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								placeholder
+							</div>				
+							<div class="div4">
+								 Text or numeric characters 
+							</div>
+							<div class="div4">
+								 HTML5 attribute; brief information intended to assist the user
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								required
+							</div>				
+							<div class="div4">
+								required  
+							</div>
+							<div class="div4">
+								HTML5 attribute; browser verifies entry of information before submitting the form 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								accesskey 
+							</div>				
+							<div class="div4">
+								 Keyboard character  
+							</div>
+							<div class="div4">
+								 Configures a hot key for the form control
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								tabindex
+							</div>				
+							<div class="div4">
+								  Numeric value 
+							</div>
+							<div class="div4">
+								 Configures the tab order of the form control 
+							</div>
+						</div>
+						
+						
+				</div>		
+				<div class="div2">
+						<div class="divhead">Submit Button. Reset Button</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<input type="submit">
+<input type="reset">
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Text Box<br>
+	E-mail: <input type="text" 
+	name="email" id="email"><br>
+	<input type="submit">
+	<input type="reset">
+</form>
+</xmp>								
+							</div>				
+							
+							<p><form name="order" 
+								method="post" 
+								id="order" 
+								action="demo.php">
+								Sample Text Box<br>
+								E-mail: <input type="text" 
+								name="email" id="email"><br>
+								<input type="submit">
+								<input type="reset">
+							</form>	</p>
+							
+						</div>	
+						<div class="div3">
+							<div class="div4">
+								type
+							</div>				
+							<div class="div4">
+								submit / reset  
+							</div>
+							<div class="div4">
+								 Configures a submit button / Configures a reset button
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter  
+							</div>
+							<div class="div4">
+								 Names the form element so that it can be easily accessed by client-side scripting languages (such as JavaScript) or by server-side processing; the name should be unique
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces, begins with a letter  
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								value
+							</div>				
+							<div class="div4">
+								 Text or numeric characters  
+							</div>
+							<div class="div4">
+								  Configures the text displayed on the button; a submit button displays the text “Submit Query” by default; a reset button displays “Reset” by default
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								accesskey
+							</div>				
+							<div class="div4">
+								 Keyboard character 
+							</div>
+							<div class="div4">
+								 Configures a hot key for the form control
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								tabindex
+							</div>				
+							<div class="div4">
+								  Numeric value 
+							</div>
+							<div class="div4">
+								Configures the tab order of the form control 
+							</div>
+						</div>
+				
+						
+				</div>	
+				<div class="div2">
+						<div class="divhead">Check Box</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="checkbox"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Check Box<br><br>
+	Choose the browsers you use:<br>
+	<input type="checkbox" name="IE" 
+		id="IE" value="yes"> 
+		Internet Explorer<br>
+	<input type="checkbox" name="Firefox" 
+		id="Firefox" value="yes"> 
+		Firefox<br>
+	<input type="checkbox" name="Opera" 
+		id="Opera" value="yes"> 
+		Opera<br>
+</form>
+</xmp>								
+							</div>				
+							<p><form name="order" 
+									method="post" 
+									id="order" 
+									action="demo.php">
+									Sample Check Box<br><br>
+									Choose the browsers you use:<br>
+									<input type="checkbox" name="IE" 
+										id="IE" value="yes"> 
+										Internet Explorer<br>
+									<input type="checkbox" name="Firefox" 
+										id="Firefox" value="yes"> 
+										Firefox<br>
+									<input type="checkbox" name="Opera" 
+										id="Opera" value="yes"> 
+										Opera<br>
+								</form></p>												
+						</div>	
+				</div>		
+				<div class="div2">
+						<div class="divhead">Radio Button</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="radio"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Check Box<br><br>
+	Select your favorite browser:<br>
+	<input type="radio" name="favbrowser"
+		id="favIE" value="IE"> 
+		Internet	Explorer<br>
+	<input type="radio" name="favbrowser" 
+		id="favFirefox" value="Firefox"> 
+		Firefox<br>
+	<input type="radio" name="favbrowser" 
+		id="favOpera" value="Opera"> 
+		Opera<br>
+</form>
+</xmp>								
+							</div>				
+							<p>
+							<form name="order" 
+								method="post" 
+								id="order" 
+								action="demo.php">
+								Sample Check Box<br><br>
+								Select your favorite browser:<br>
+								<input type="radio" name="favbrowser"
+									id="favIE" value="IE"> 
+									Internet	Explorer<br>
+								<input type="radio" name="favbrowser" 
+									id="favFirefox" value="Firefox"> 
+									Firefox<br>
+								<input type="radio" name="favbrowser" 
+									id="favOpera" value="Opera"> 
+									Opera<br>
+							</form>
+							</p>							
+														
+						</div>	
+						<div class="div3">
+							<div class="div4">
+								type
+							</div>				
+							<div class="div4">
+								  radio  
+							</div>
+							<div class="div4">
+								 Configures a radio button
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces, begins with a letter 
+							</div>
+							<div class="div4">
+								 Names the form element so that it can be easily accessed by client-side scripting languages (such as JavaScript) or by server-side processing; the name should be unique
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								  Alphanumeric, no spaces, begins with a letter 
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								checked
+							</div>				
+							<div class="div4">
+								 checked  
+							</div>
+							<div class="div4">
+								 Configures the radio button to be selected by default when displayed by the browser
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								value
+							</div>				
+							<div class="div4">
+								Text or numeric characters   
+							</div>
+							<div class="div4">
+								 Assigns a value to the radio button that is triggered when the radio button is selected; this should be a unique value for each radio button in a group; this value can be accessed by client-side and server-side processing
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								 disabled  
+							</div>
+							<div class="div4">
+								 Form control is disabled
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								readonly
+							</div>				
+							<div class="div4">
+								 readonly  
+							</div>
+							<div class="div4">
+								 Form control is for display; cannot be edited
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								autofocus
+							</div>				
+							<div class="div4">
+								 autofocus  
+							</div>
+							<div class="div4">
+								  HTML5 attribute; browser places cursor in the form control and sets the focus
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								 required
+							</div>				
+							<div class="div4">
+								  required  
+							</div>
+							<div class="div4">
+								  HTML5 attribute; browser verifies entry of information before submitting the form
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								accesskey
+							</div>				
+							<div class="div4">
+								  Keyboard character  
+							</div>
+							<div class="div4">
+								  Configures a hot key for the form control
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								tabindex
+							</div>				
+							<div class="div4">
+								Numeric value   
+							</div>
+							<div class="div4">
+								 Configures the tab order of the form control 
+							</div>
+						</div>
+						
+				</div>
+
+				<div class="div2">
+						<div class="divhead">Hidden Input Control</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+ type="hidden"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Hidden Input Control<br>
+	<input type="hidden" name="sendto" 
+	id="sendto" value="order@site.com">
+</form>
+</xmp>								
+							</div>				
+							
+							
+								 <p><form name="order" 
+									method="post" 
+									id="order" 
+									action="demo.php">
+									Sample Hidden Input Control<br>
+									type="hidden" configures a hidden input control. <br>
+									<input type="hidden" name="sendto" 
+									id="sendto" value="order@site.com">
+								</form></p>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								type
+							</div>				
+							<div class="div4">
+								hidden  
+							</div>
+							<div class="div4">
+								 Configures a hidden element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								name 
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces, begins with a letter 
+							</div>
+							<div class="div4">
+								 Names the form element so that it can be easily accessed by client-side scripting languages (such as JavaScript) or by server-side processing; the name should be unique
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter  
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								value 
+							</div>				
+							<div class="div4">
+								 Text or numeric characters 
+							</div>
+							<div class="div4">
+								Assigns a value to the hidden control; this value can be accessed by client-side scripting languages and server-side processing 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								 disabled 
+							</div>
+							<div class="div4">
+								  Form control is disabled
+							</div>
+						</div>
+							
+				</div>
+
+				<div class="div2">
+
+						<div class="divhead">Password Box</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="password"
+attributes see text box
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Password Box<br>
+	Password: <br> <input type="password" 
+	name="pword" id="pword">
+</form>
+</xmp>								
+							</div>				
+							
+							
+								<p><form name="order" 
+									method="post" 
+									id="order" 
+									action="demo.php">
+									Sample Password Box<br>
+									Password: <br><input type="password" name="pword" id="pword" size="8">
+								</form>	</p>
+							
+						</div>
+				</div>
+				
+				<a id="Scrolling Text Box"><h2>Scrolling Text Box</h2>
+				<div class="div2">
+						<div class="divhead">Textarea Element</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<textarea> 
+	... 
+</textarea>
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">
+	Sample Scrolling Text Box<br>
+	Comments:<br>
+	<textarea name="comments" 
+		id="comments" cols="40" rows="2"> 
+		Enter your comments here
+	</textarea>
+</form>
+</xmp>								
+							</div>				
+							
+							<p><form name="order" 
+								method="post" 
+								id="order" 
+								action="demo.php">
+								Sample Scrolling Text Box<br>
+								Comments:<br>
+								<textarea name="comments" 
+									id="comments" cols="20" rows="5"> 
+									Enter your comments here
+								</textarea>
+							</form>	</p>						
+							
+						</div>	
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces, begins with a letter 
+							</div>
+							<div class="div4">
+								Names the form element so that it can be easily accessed by client-side scriptinglanguages (such as JavaScript) or by server-side processing; the name should be unique 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id
+							</div>				
+							<div class="div4">
+								 Alphanumeric, no spaces, begins with a letter 
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								cols
+							</div>				
+							<div class="div4">
+								 Numeric value 
+							</div>
+							<div class="div4">
+								Required; configures the width in character columns of the scrolling text box; if cols is omitted, the browser displays the scrolling text box with its own default width
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								rows
+							</div>				
+							<div class="div4">
+								  Numeric value 
+							</div>
+							<div class="div4">
+								 Required; configures the height in rows of the scrolling text box; if rows is omitted, the browser displays the scrolling text box with its own default height
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								maxlength
+							</div>				
+							<div class="div4">
+								  Numeric value 
+							</div>
+							<div class="div4">
+								 Configures the maximum length of data accepted by the text box
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								 disabled 
+							</div>
+							<div class="div4">
+								 Form control is disabled
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								readonly
+							</div>				
+							<div class="div4">
+								readonly   
+							</div>
+							<div class="div4">
+								 Form control is for display; cannot be edited
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								autofocus
+							</div>				
+							<div class="div4">
+								 autofocus 
+							</div>
+							<div class="div4">
+								 HTML5 attribute; browser places cursor in the form control and sets the focus
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								placeholder
+							</div>				
+							<div class="div4">
+								 Text or numeric characters 
+							</div>
+							<div class="div4">
+								HTML5 attribute; brief information intended to assist the user 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								required
+							</div>				
+							<div class="div4">
+								 required 
+							</div>
+							<div class="div4">
+								HTML5 attribute; browser verifies entry of information before submitting the form 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								wrap
+							</div>				
+							<div class="div4">
+								 hard or soft 
+							</div>
+							<div class="div4">
+								 HTML5 attribute; configures line breaks within the information entered
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								accesskey
+							</div>				
+							<div class="div4">
+								 Keyboard character 
+							</div>
+							<div class="div4">
+								Configures a hot key for the form control 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								tabindex
+							</div>				
+							<div class="div4">
+								 Numeric value 
+							</div>
+							<div class="div4">
+								Configures the tab order of the form control 
+							</div>
+						</div>
+						
+				</div>
+				<a id="Scrolling Text Box"><h2>Select List</h2>
+				<div class="div2">
+						<div class="divhead">Select List</div>
+						<div class="div3">
+							<div class="div4">
+								One Initial Vidible Item
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">One Initial Vidible Item<br>
+	<select size="1" name="favbrowser" id="favbrowser">
+		<option>Select your favorite browser</option>
+		<option value="Internet Explorer">Internet Explorer</option>
+		<option value="Firefox">Firefox</option>
+		<option value="Opera">Opera</option>
+	</select>
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+								<form name="order" 
+									method="post" 
+									id="order" 
+									action="demo.php">
+									Select List: One Initial Vidible Item<br><br>
+									<select size="1" name="favbrowser" id="favbrowser">
+										<option>Select your favorite browser</option>
+										<option value="Internet Explorer">Internet Explorer</option>
+										<option value="Firefox">Firefox</option>
+										<option value="Opera">Opera</option>
+									</select>
+								</form>
+							</p>						
+							
+						</div>	
+						<div class="div3">
+							<div class="div4">
+								Four Itims Visible
+							</div>
+							<div class="div4">
+<xmp>
+<form name="order" 
+	method="post" 
+	id="order" 
+	action="demo.php">Four Itims Visible<br>
+	<select size="4" name="jumpmenu" id="jumpmenu">
+		 <option value="index.html">Home</option>
+		 <option value="products.html">Products</option>
+		 <option value="services.html">Services</option>
+		 <option value="about.html">About</option>
+		 <option value="contact.html">Contact</option>
+	</select>
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+								<form name="order" 
+									method="post" 
+									id="order" 
+									action="demo.php">Four Itims Visible<br><br>
+									<select size="4" name="jumpmenu" id="jumpmenu">
+										 <option value="index.html">Home</option>
+										 <option value="products.html">Products</option>
+										 <option value="services.html">Services</option>
+										 <option value="about.html">About</option>
+										 <option value="contact.html">Contact</option>
+									</select>
+								</form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">Select Element</div>
+						<div class="div3">
+							<div class="div4">
+								name
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter
+							</div>
+							<div class="div4">
+								 Names the form element so that it can be easily accessed by client-side scripting languages (such as JavaScript) or by server-side processing; the name should be unique
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								id 
+							</div>				
+							<div class="div4">
+								Alphanumeric, no spaces, begins with a letter
+							</div>
+							<div class="div4">
+								 Provides a unique identifier for the form element
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								size
+							</div>				
+							<div class="div4">
+								Numeric value
+							</div>
+							<div class="div4">
+								 Configures the number of choices the browser will display;if set to 1, the element functions as a drop-down list (see Figure 9.12); scroll bars are automatically added by the browser if the number of options exceeds the space allowed
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								multiple
+							</div>				
+							<div class="div4">
+								multiple 
+							</div>
+							<div class="div4">
+								Configures a select list to accept more than one choice; by default, only one choice can be made from a select list 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								 disabled
+							</div>
+							<div class="div4">
+								 Form control is disabled
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								tabindex
+							</div>				
+							<div class="div4">
+								Numeric value
+							</div>
+							<div class="div4">
+								Configures the tab order of the form control 
+							</div>
+						</div>
+						<div class="divhead">Option Element</div>
+						<div class="div3">
+							<div class="div4">
+								value
+							</div>				
+							<div class="div4">
+								Text or numeric characters
+							</div>
+							<div class="div4">
+								Assigns a value to the option; this value can be accessed by client-side and server-side processing 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								selected
+							</div>				
+							<div class="div4">
+								selected
+							</div>
+							<div class="div4">
+								Configures an option to be initially selected when displayed by a browser 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								disabled
+							</div>				
+							<div class="div4">
+								disabled
+							</div>
+							<div class="div4">
+								Form control is disabled 
+							</div>
+						</div>
+						<div class="divhead">Label Element. Fieldset and Legend Elements</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<fieldset>
+	<legend></legend>
+</fieldset>
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+<fieldset>
+	<legend>Billing Address</legend>
+	<label>Street: <input type="text" 
+	name="street" id="street"
+	maxlength="54"></label><br><br>
+	<label>City: <input type="text" 
+	name="city" id="city"></label><br><br>
+	<label for="state">State: </label><input type="text" 
+	name="state" id="state" maxlength="2"
+	size="5"><br><br>
+	<label for="zip">Zip: </label><input type="text" 
+	name="zip" id="zip" maxlength="5"
+	size="5">
+</fieldset>
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+							<form>
+								<fieldset>
+									<legend>Billing Address</legend>
+									<label>Street: <input type="text" 
+									name="street" id="street"
+									maxlength="54"></label><br><br>
+									<label>City: <input type="text" 
+									name="city" id="city"></label><br><br>
+									<label for="state">State: </label><input type="text" 
+									name="state" id="state" maxlength="2"
+									size="5"><br><br>
+									<label for="zip">Zip: </label><input type="text" 
+									name="zip" id="zip" maxlength="5"
+									size="5">
+								</fieldset>
+							</form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">The <code> tabindex</code> Attribute. The <code>accesskey</code> Attribute</div>
+						<div class="div3">
+							<div class="div4">
+								 tabindex<br>
+								 accesskey
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+<fieldset>
+	<legend>Billing Address</legend>
+	Street: <input type="text" 
+	name="street" id="street"
+	maxlength="54" tabindex="1"><br><br>
+	City: <input type="text" 
+	name="city" id="city"><br><br>
+	State: <input type="text" 
+	name="state" id="state" maxlength="2"
+	size="5"><br><br>
+	Zip: <input type="text" 
+	name="zip" id="zip" maxlength="5"
+	size="5" accesskey="E">
+</fieldset>
+</form>
+</xmp>								
+							</div>				
+							
+								<p><form>
+								<fieldset>
+									<legend>Billing Address</legend>
+									Street: <input type="text" 
+									name="street" id="street"
+									maxlength="54" tabindex="1"><br><br>
+									City: <input type="text" 
+									name="city" id="city"><br><br>
+									State: <input type="text" 
+									name="state" id="state" maxlength="2"
+									size="5"><br><br>
+									Zip: <input type="text" 
+									name="zip" id="zip" maxlength="5"
+									size="5" accesskey="E">
+								</fieldset>
+								</form></p>								
+							
+						</div>
+						
+				</div>
+				<a id="Scrolling Text Box"><h2> Style a Form with CSS</h2>
+				<div class="div2">
+						<div class="divhead"> Style a Form with CSS</div>
+						<div class="div3">
+							<div class="div4">
+								CSS<br>
+								HTML
+							</div>				
+							<div class="div4">
+<xmp>
+#formCSS { 
+	background-color:#eaeaea;
+	font-family: Arial, sans-serif;
+	padding: 10px; 
+}
+#formCSS label { 
+	float: left;
+	width: 100px;
+	clear: left;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px; 
+}
+#formCSS input, textarea { 
+	margin-top: 10px;
+	display: block; 
+}
+#formCSS #mySubmit { margin-left: 110px; }
+
+The HTML code is
+<form id="formCSS">
+	<label for="myName">Name:</label>
+	<input type="text" name="myName" id="myName">
+	<label for="myEmail">E-mail:</label>
+	<input type="text" name="myEmail" id="myEmail">
+	<label for="myComments">Comments:</label>
+	<textarea name="myComments" id="myComments" rows="2"
+	cols="20"></textarea>
+	<input id="mySubmit" type="submit" value="Submit">
+</form>
+</xmp>								
+							</div>
+							<p>
+								<form id="formCSS">
+									 <label for="myName">Name:</label>
+									 <input type="text" name="myName" id="myName">
+									 <label for="myEmail">E-mail:</label>
+									 <input type="text" name="myEmail" id="myEmail">
+									 <label for="myComments">Comments:</label>
+									 <textarea name="myComments" id="myComments" rows="2"
+									 cols="20"></textarea>
+									 <input id="mySubmit" type="submit" value="Submit">
+								</form> 
+							</p>
+						</div>
+				</div>		
+				<a id="Scrolling Text Box"><h2>Server-Side Processing</h2>
+				<div class="div2">
+						<div class="div3">
+							<div class="div4">
+								CGI
+							</div>				
+							<div class="div4">
+								 Common Gateway Interface
+							</div>
+							<div class="div4">
+								 CGI is a protocol, or standard method, for a web server to pass a web page user’s request (which is typically initiated through the use of a form) to an application program and to accept information to send to the user. The web server typically passes the form information to a small application program that is run by the operating system and that processes the data, usually sending back a confirmation web page or message. 
+							</div>
+						</div>
+				
+						<div class="div3">
+							<div class="div4">
+								SSS
+							</div>				
+							<div class="div4">
+								Server-side scripting
+							</div>
+							<div class="div4">
+								 Technology by which a server-side script is run on a web server to dynamically generate web pages. Examples of server-side scripting technologies include PHP, Ruby on Rails, Microsoft Active Server Pages, Adobe ColdFusion, Oracle JavaServer Pages, and Microsoft .NET. Server-side scripting differs from CGI in that it uses direct execution: The script is run either by the web server itself or by an extension module to the web server.
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								<p>form <code>method</code> attribute</p>
+							</div>				
+							<div class="div4">
+								<code>get / post</code>
+							</div>
+							<div class="div4">
+								 The <code>method</code> attribute is used on the form tag to indicate the way in which the name and value pairs should be passed to the server. The <code>method</code> attribute value of <code>get</code> causes the form data to be appended to the URL, which is easily visible and not secure. The <code>method</code> attribute value of <code>post</code> does not pass the form information in the URL; it passes it in the entity body of the HTTP request, which makes it more private. The W3C recommends the method=“post” method.
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								<p>form <code>action</code> attribute</p>
+							</div>				
+							<div class="div4">
+								<code>action</code>
+							</div>
+							<div class="div4">
+								 The <code>action</code> attribute is used on the <code>&ltform&gt</code> tag to invoke a server-side script. The <code>name</code> attribute and the <code>value</code> attribute associated with each form control are passed to the server-side script. The <code>name</code> attribute may be used as a variable name in the server-side processing. 
+							</div>
+						</div>
+				
+						<div class="div3">
+							<div class="div4">
+								<p>Script <br><code>	http://webdevbasics.net/scripts/demo.php </code><br> will	accept	form	input	and	display	the	form	control	names	and	values in a web page.  </p>
+							</div>				
+							<div class="div4">
+<xmp>
+<form id="formCSS" 
+	method="post" 
+	action="http://webdevbasics.net/scripts/demo.php">
+	 <label for="myName">Name:</label>
+	 <input type="text" name="myName" id="myName">
+	 <label for="myEmail">E-mail:</label>
+	 <input type="text" name="myEmail" id="myEmail">
+	 <label for="myComments">Comments:</label>
+	 <textarea name="myComments" id="myComments" rows="2"
+	 cols="20"></textarea>
+	 <input id="mySubmit" type="submit" value="Submit">
+</form>
+</xmp>								
+							</div>
+							<p>
+								<form id="formCSS" method="post" action="http://webdevbasics.net/scripts/demo.php">
+									 <label for="myName">Name:</label>
+									 <input type="text" name="myName" id="myName">
+									 <label for="myEmail">E-mail:</label>
+									 <input type="text" name="myEmail" id="myEmail">
+									 <label for="myComments">Comments:</label>
+									 <textarea name="myComments" id="myComments" rows="2"
+									 cols="20"></textarea>
+									 <input id="mySubmit" type="submit" value="Submit">
+								</form> 
+							</p>
+						</div>
+						
+						<div class="div3">
+							<div class="div4">
+								<p>Sources of Free Remote-Hosted Form Processing</p>
+							</div>				
+							<div class="div4">
+								<ul>
+									<li>FormBuddy.com:<a href="http://formbuddy.com">http://formbuddy.com</a></li>
+									<li>ExpressDB:	<a href="http://www.expressdb.com">http://www.expressdb.com</a></li>
+									<li> FormMail:	<a href="http://www.formmail.com">http://www.formmail.com</a></li>
+									<li>Master.com:	<a href="http://www.master.com">http://www.master.com</a></li>
+									
+								</ul>
+							</div>
+							<div class="div4">
+								 <ul>
+									<li>FormBuddy.com:<a href="http://formbuddy.com">http://formbuddy.com</a></li>
+									<li>ExpressDB:	<a href="http://www.expressdb.com">http://www.expressdb.com</a></li>
+									<li> FormMail:	<a href="http://www.formmail.com">http://www.formmail.com</a></li>
+									<li>Master.com:	<a href="http://www.master.com">http://www.master.com</a></li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								<p>Sources of Free Server-Side Scripts</p>
+							</div>				
+							<div class="div4">
+								<ul>
+									<li>The	PHP	Resource	Index:<a href="	http://php.resourceindex.com">	http://php.resourceindex.com</a></li>
+									<li> HotScripts:<a href="	http://www.hotscripts.com">	http://www.hotscripts.com</a></li>
+									<li> Matt’s	Script	Archive:	http://www.scriptarchive.com</li>
+									
+									
+								</ul>
+							</div>
+							<div class="div4">
+								 <ul>
+									<li>The	PHP	Resource	Index:<a href="	http://php.resourceindex.com">	http://php.resourceindex.com</a></li>
+									<li> HotScripts:<a href="	http://www.hotscripts.com">	http://www.hotscripts.com</a></li>
+									<li> Matt’s	Script	Archive:	http://www.scriptarchive.com</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								<p>Exploring Server-Side Processing Technologies</p>
+							</div>				
+							<div class="div4">
+								<ul>
+									<li> PHP:	<a href="http://www.php.net">http://www.php.net</a></li>
+									<li>Oracle	JavaServer	Pages	Technology:	<a rhef="http://www.oracle.com/technetwork/java/javaee/jsp">http://www.oracle.com/technetwork/java/javaee/jsp</a></li>
+									<li> Active	Server	Pages:	<a href="http://msdn.microsoft.com/en-us/library/ms972337.aspx">http://msdn.microsoft.com/en-us/library/ms972337.aspx</a></li>
+									<li> Adobe	ColdFusion	and	Web	Applications:	<a href="http://www.adobe.com/products/coldfusion">http://www.adobe.com/products/coldfusion</a></li>
+									<li>Ruby	on	Rails:	<a href="http://www.rubyonrails.org">http://www.rubyonrails.org</a></li>
+									<li> Microsoft	.NET:	<a href="http://www.microsoft.com/net">http://www.microsoft.com/net</a></li>
+									
+								</ul>
+							</div>
+							<div class="div4">
+								 <ul>
+									<li> PHP:	<a href="http://www.php.net">http://www.php.net</a></li>
+									<li>Oracle	JavaServer	Pages	Technology:	<a rhef="http://www.oracle.com/technetwork/java/javaee/jsp">http://www.oracle.com/technetwork/java/javaee/jsp</a></li>
+									<li> Active	Server	Pages:	<a href="http://msdn.microsoft.com/en-us/library/ms972337.aspx">http://msdn.microsoft.com/en-us/library/ms972337.aspx</a></li>
+									<li> Adobe	ColdFusion	and	Web	Applications:	<a href="http://www.adobe.com/products/coldfusion">http://www.adobe.com/products/coldfusion</a></li>
+									<li>Ruby	on	Rails:	<a href="http://www.rubyonrails.org">http://www.rubyonrails.org</a></li>
+									<li> Microsoft	.NET:	<a href="http://www.microsoft.com/net">http://www.microsoft.com/net</a></li>
+									
+								</ul>
+							</div>
+						</div>
+				</div>
+				<a id="HTML5 Form Controls"><h2>HTML5 Form Controls</h2>
+				<div class="div2">
+					<div class="divhead">E-mail Address Input</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="email"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+	<label for="email">
+		E-mail:</label>
+	<input type="email" name="myEmail" 
+		id="myEmail">
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+							<form>
+								<label for="email">E-mail:</label>
+								<input type="email" name="myEmail" id="myEmail">
+							</form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">URL Input</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="url"
+</xmp>								
+							</div>				
+							<div class="div4">
+<xmp>
+<form>
+	<label for="myWebsite">
+		Suggest a Website:</label>
+	<input type="url" 
+		name="myWebsite" id="myWebsite">
+</form>
+</xmp>								
+							</div>
+								<form>
+									<label for="myWebsite">Suggest a Website:</label>
+									<input type="url" name="myWebsite" id="myWebsite">
+								</form> </p>
+							
+						</div>
+						<div class="divhead">Telephone Number Input</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="tel"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+	<label for="mobile">
+		Mobile Number:</label>
+	<input type="tel" 
+		name="mobile" id="mobile">
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+							<form>
+								<label for="mobile">
+									Mobile Number:</label>
+								<input type="tel" 
+									name="mobile" id="mobile">
+							</form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">Search Field Input</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="search"
+</xmp>								
+							</div>				
+							<div class="div4">
+<xmp>
+<form>
+	<label for="keyword">
+		Search:</label>
+	<input type="search" 
+		name="keyword" id="keyword">
+</form>
+</xmp>								
+							</div>
+							<p><form>
+								<label for="keyword">
+									Search:</label>
+								<input type="search" 
+									name="keyword" id="keyword">
+							</form></p>
+						</div>
+						<div class="divhead">Datalist Form Control</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+<datalist>
+...
+</datalist>
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+	<label for="color">Favorite 
+		Color:</label>
+	<input type="text" name="color" 
+		id="color" list="colors">
+	 <datalist id="colors">
+		 <option value="red">
+		 <option value="green">
+		 <option value="blue">
+		 <option value="yellow">
+		 <option value="pink">
+		 <option value="black">
+	</datalist>
+</form>
+</xmp>								
+							</div>				
+							
+							<p>
+								<form>
+									<label for="color">Favorite 
+										Color:</label>
+									<input type="text" name="color" 
+										id="color" list="colors">
+									 <datalist id="colors">
+										 <option value="red">
+										 <option value="green">
+										 <option value="blue">
+										 <option value="yellow">
+										 <option value="pink">
+										 <option value="black">
+									</datalist>
+								</form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">Slider Form Control</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+type="range"
+ min attribute
+ max attribute
+ max attribute
+</xmp>								
+							</div>				
+							<div class="div4">
+<xmp>
+<form>
+	<label for="myChoice">
+		Choose a number between 
+		1 and 100:
+	</label><br>
+	Low 
+	<input type="range" 
+	name="myChoice" id="myChoice"
+	min="1" 
+	max="100">
+	High
+</form>
+</xmp>								
+							</div>
+							<p>
+							<form>
+								<label for="myChoice">
+									Choose a number between 
+									1 and 100:
+								</label><br>
+								Low 
+								<input type="range" 
+								name="myChoice" id="myChoice"
+								min="1" 
+								max="100">
+								High
+							</form>
+							</p>
+						</div>
+				</div>
+						<div class="divhead">Spinner Form Control</div>
+						<div class="div3">
+							<div class="div4">
+<xmp>
+ type="number"
+</xmp>
+							</div>
+							<div class="div4">
+<xmp>
+<form>
+	<label for="myChoice">
+		Choose a number between 1 and 10:
+	</label>
+	<input type="number"
+	 name="myChoice" id="myChoice"
+	 min="1" max="10">
+ </form>
+</xmp>								
+							</div>				
+							
+							<p>
+							<form>
+								<label for="myChoice">
+									Choose a number between 1 and 10:
+								</label>
+								<input type="number"
+								 name="myChoice" id="myChoice"
+								 min="1" max="10">
+							 </form>
+							</p>						
+							
+						</div>	
+						<div class="divhead">Calendar Form Control</div>
+						<div class="div3">
+							<div class="div4">
+								type="date"
+							</div>				
+							<div class="div4">
+<xmp>
+<form>
+	<label for="myDate">
+		Choose a Date</label>
+	<input type="date" 
+		name="myDate" id="myDate">
+</form>
+</xmp>
+									
+							</div>
+							
+								 <p>
+									<form>
+										<label for="myDate">
+											Choose a Date</label>
+										<input type="date" 
+											name="myDate" id="myDate">
+									</form>
+								 </p>
+							
+						</div>
+						<div class="div3">
+							<div class="div4">
+								date 
+							</div>				
+							<div class="div4">
+								A date
+							</div>
+							<div class="div4">
+<xmp>
+YYYY-MM-DD
+Example:
+January 2, 2014 is 
+	represented by 
+	“2014-01-02”
+</xmp>
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								datetime
+							</div>				
+							<div class="div4">
+								 A date and time with time zone information; note that the time zone is indicated by the offset from UTC time
+							</div>
+							<div class="div4">
+<xmp>
+YYYY-MM-DDTHH:MM:SS-##:##Z
+Example:
+January 2, 2014, at exactly 
+	9:58 a.m. Chicago time 
+	(CST) is represented 
+	by “2014-01-02T09:58:
+	00-06:00Z”
+</xmp>								 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								datetime-local
+							</div>				
+							<div class="div4">
+								A date and time without time zone information
+							</div>
+							<div class="div4">
+<xmp>
+YYYY-MM-DDTHH:MM:SS
+Example:
+January 2, 2014, at 
+	exactly 9:58 a.m. 
+	is represented by 
+	“2014-01-02T09:58:00”
+</xmp>								 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								time 
+							</div>				
+							<div class="div4">
+								A time without time zone information
+							</div>
+							<div class="div4">
+<xmp>
+HH:MM:SS
+Example:
+1:34 p.m. is
+	represented 
+	by “13:34:00”
+</xmp>								 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								month
+							</div>				
+							<div class="div4">
+								 A year and month 
+							</div>
+							<div class="div4">
+<xmp>
+YYYY-MM
+Example:
+January 2014 is 
+	represented by “2014-01”
+</xmp>								 
+							</div>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								week
+							</div>				
+							<div class="div4">
+								A year and week 
+							</div>
+							<div class="div4">
+<xmp>
+YYYY-W##, where ## 
+	represents the week in the year
+Example:
+The third week in 2014 
+	is represented by “2014-W03”
+</xmp>									 
+							</div>
+						</div>
+						
+						<div class="divhead">Color-well Form Control</div>
+						<div class="div3">
+							<div class="div4">
+								type="color"
+							</div>				
+							<div class="div4">
+<xmp>
+<form>
+	<label for="myColor">
+		Choose a color:</label>
+	<input type="color" 
+		name="myColor" id="myColor">
+</form>
+</xmp>								
+							</div>
+							<p>
+								<form>
+									<label for="myColor">
+										Choose a color:</label>
+									<input type="color" 
+										name="myColor" id="myColor">
+								</form>
+							</p>
+						</div>
+						<div class="div3">
+							<div class="div4">
+								
+							</div>				
+							<div class="div4">
+								
+							</div>
+							<div class="div4">
+								 
+							</div>
+						</div>
+						
+				</div>
+			</div>	
+					
+		</main>
+		</div>
+			<nav id="nav_bottom">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Описание кода.html">Описание кода</a></li>
+					<li><a href="text.html">text</a></li>					
+					<li><a href="ch4.html">ch4 CSS Visual Effects</a></li>
+					<li><a href="ch5.html">ch5 Web Desing</a></li>
+					<li><a href="ch6.html">ch6 Page Layout</a></li>
+					<li><a href="ch7.html">ch7 More on Linls, Layout, Mobil</a></li>
+					<li><a href="special_characters.html">Special Chracters</a></li>
+					<li><a href="default_style_sheet.html">Default Style Sheet</a></li>
+				</ul>
+			</nav>
+			<footer>
+				Copyright &copy; 2014 Your Name Here
+			</footer>
+
+		
+		
+	</body>
+</html>
